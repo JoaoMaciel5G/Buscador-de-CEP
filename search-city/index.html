@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,28 +20,29 @@
       </div>
       <div>
         <form>
-          <div class="search">
-            <label for="cep">Digite somente a rua</label>
-            <input class="cep" id="cep"/>
+          <div class="busca">
+            <label for="rua">Digite o nome do local</label>
+            <input class="cep" id="rua" placeholder="Rua/Avenida ...." />
           </div>
-          <div class="search">
-            <label for="cep">Digite o nome da cidade</label>
-            <input class="cep" id="cep" placeholder="ex: São Paulo"/>
+          <div class="busca">
+            <label for="cidade">Digite o nome da cidade</label>
+            <input class="cep" id="cidade" placeholder="ex: São Paulo" />
           </div>
-          <div class="search">
-            <label for="cep">Digite a sigla do seu estado</label>
-            <input class="cep" id="cep" placeholder="ex: SP"/>
+          <div class="busca">
+            <label for="estado">Digite a sigla do estado</label>
+            <input class="cep" id="estado" placeholder="ex: SP" />
           </div>
           <button id="btn">Buscar CEP</button>
+          <div id="erro">
+            <p>Erro ao buscar o CEP. Tente novamente</p>
+          </div>
+          <span id="home">
+            <a href="../index.html">Voltar</a>
+          </span>
         </form>
-        <div id="description">
-            <p>CEP: <span id="cep"></span></p>
-            <p>Local: <span id="local"></span></p>
-            <p>Bairro: <span id="bairro"></span></p>
-            <p>Cidade: <span id="cidade"></span></p>
-        </div>
       </div>
     </main>
-    <script src="./script.js"></script>
+    <section class="lista-cep"></section>
+    <script src="./search-city.js"></script>
   </body>
 </html>

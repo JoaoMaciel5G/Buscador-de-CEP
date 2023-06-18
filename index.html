@@ -22,13 +22,19 @@
         <form>
           <div class="search">
             <label for="cep">Digite o CEP</label>
-            <input type="text" id="cep" placeholder="00000000"/>
+            <input type="text" class="cep" id="cep" placeholder="00000000"/>
             <button id="btn">Buscar CEP</button>
           </div>
+          <div id="erro">
+          <p>
+            Erro ao buscar o CEP. Tente novamente
+          </p>
+        </div>
           <span id="forgot">Não sabe seu CEP?
-            <a href="./search-city.html">Aperte aqui</a>
+            <a href="./search-city">Aperte aqui</a>
           </span>
         </form>
+        
         <div id="description">
             <p>CEP: <span id="cep"></span></p>
             <p>Local: <span id="local"></span></p>
